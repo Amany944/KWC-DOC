@@ -1,0 +1,295 @@
+:root
+{
+    --background-color: rgb(209, 187, 187);
+    --bacground-w : 100%;
+    --bacground-h : 100%;
+    --box-padding : 20px;
+    --box-margin: 20px;
+    --border-box: 2px solid #000;
+    --box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    --box-w: 300px;
+    --box-h: 200px;
+    --border-color : #b4413f;
+    --nav-color: rgb(235, 119, 119);
+    --nav-w: 100%;
+    --nav-h: 80px;
+    --nav-padding: 10px;
+    --nav-border: none;
+    --nav-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    --nav-link-padding: 50px 100px;
+    --link-color: rgb(147, 31, 29);
+    --logo-w:120px
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+scroll-behavior: smooth;
+font-size: 1.5rem;
+}
+
+body{
+    font-family: georgia, sans-serif;
+    background-color: var(--background-color);
+   
+}
+.logo{
+    width: var(--nav-w);
+    height: var(--nav-h);
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 15px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--nav-color);
+    width: var(--nav-w);
+
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    justify-content: end;
+
+
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    padding-left: var(--nav-link-padding);
+    justify-content: center;
+}
+
+
+a:hover:active {
+    color: rgb(180, 26, 185) !important;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+a {
+    color: rgb(230, 41, 167);
+    text-decoration: none;
+    all:inset;
+}
+input[type=text] {
+    font-family: georgia;
+    font-weight: bold;
+    color: rgb(5, 5, 5);
+}
+input[type="button"] {
+    background-color: rgb(235, 119, 119);
+    color: rgb(10, 8, 8);
+    border: black solid 2px;
+    padding: 10px 4px;
+    border-radius: 34%;
+    cursor: pointer;
+    font-weight: 200;
+}
+
+h1{
+    font-size: 2.5rem;
+    color: rgb(147, 31, 29);
+    padding: 20px ;
+    padding-bottom: 14px;
+    text-align: start;
+    text-shadow: 4px 5px 16px rgba(129, 66, 66, 0.95);
+    
+}   
+h3{
+    padding-left: 25px;
+    text-align: start;
+    text-shadow: 2px 2px 4px rgba(129, 66, 66, 0.95);
+}
+
+.p,div p{
+    padding-top: 6px;
+    text-indent: 2em;
+    text-align: justify;
+    word-spacing: 2px;
+    padding-left: 15px;
+    line-height: 1,6 em;
+    font-size: 1.16rem;
+}
+i{
+     font-size: 20px;
+}
+
+div {
+    background-color: rgb(209, 121, 121, 0,5)
+}
+div p {
+    border-left:var(--border-color) solid 4px; 
+    padding-left: 20px;
+    padding-right: 10px;
+    background-color: rgb(233, 108, 106, 0.2082) ;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+    
+#maVideo {
+    width: 75%;
+    margin-bottom: 20px;
+    border: rgb(156, 151, 151) solid 8px;
+
+    box-shadow: inset 0 10px 40px rgba(228, 220, 220, 0.5);
+    
+}
+
+.search-bar {
+    /* display: flex; */
+    padding: 20px;
+    padding-right: 15px;
+    background-color: none;
+}
+input[type="text"] {
+    width: 200px;
+    padding: 6px;
+    border: none;
+    border-radius: 4px;
+}
+input[type="password"]{
+    width: 240px;
+    padding: 6px;
+    border: none;
+    border-radius: 4px;
+}
+
+input[type="submit"]{
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 20%;
+    padding: 6px;
+    color: rgb(10, 8, 8);
+    margin-left: 200px;
+}
+ 
+input[type="submit"],[type="text"],[type="password"]:hover {
+    border: 2px solid rgb(14, 4, 4);
+    color: rgb(235, 119, 119);
+    transition: all 0.3s ease;
+    box-shadow : 2 14 30 red;
+}
+input[type="submit"]:hover {
+    background-color: rgb(235, 119, 119);
+    color: rgb(10, 8, 8);
+    border: black solid 2px;
+    padding: 10px 4px;
+    border-radius: 34%;
+    cursor: pointer;
+    font-weight: 200;
+}
+
+
+
+    
+div .img-1 {
+    display: block;
+    width: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+small{
+    color: rgb(147, 31, 29);
+    font-size: 15.4px;
+    font-weight: bold;
+}
+.button{
+    display: flex;
+    width : 50 px;
+    align-self: self-end;
+}
+fieldset{
+    text-align:center;
+    border: 2px solid rgb(147, 31, 29);
+    padding: 20px;
+    margin-top: 14px;
+    border-radius: 10px;
+    padding-top: 20px;
+    margin: 25px;
+    background-color: rgb(233, 108, 106, 0.2082) ;
+}
+    
+section [id=temoignage] , div div div p{
+    font-size: 12px;
+    font-weight: 100;
+    line-height: 14px;
+}
+.temoignage{
+    display: flex;
+    justify-content: space-evenly;
+    background: none;
+    width: 100vw;
+    height: 150px;
+    margin-top: 30px;
+}
+ 
+
+.T1, .T2, .T3, .T4{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1;
+    width: 450px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 4px;
+    line-height: 14px;
+    font-size: 12px;
+    background-color: rgb(194, 159, 159);
+    -webkit-border-radius:4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+#login{
+    padding-top: 3500px;
+}
+    
+
+footer{
+    background-color: rgb(49, 49, 49, 0.5);
+    text-align: center;
+    padding: 20px;
+    height: 100px ;
+    padding-bottom: 6px;
+}
+footer p {
+    text-align: center;
+}
+footer a {
+    all: unset;
+    color: rgb(59, 56, 55);
+}
+footer small {
+ color :rgb(59, 58, 55)
+}
+footer i {
+    text-decoration: solid;
+}
+small i {
+    display: inline;
+    text-align: justify;
+    font-size: small;
+}
